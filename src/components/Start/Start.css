@@ -1,0 +1,28 @@
+#backgroundImg {
+    height: 100vh;
+    width: 100%;
+}
+
+.background-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    color: darkorange;
+    z-index: 0;
+}
+
+.mobile-background-text {
+    display: none;
+}
+
+@media (max-width: 400px) {
+    .desktop-background-text {
+        display: none;
+    }
+    .mobile-background-text {
+        display: inline-block;
+    }
+}
