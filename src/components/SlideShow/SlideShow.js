@@ -1,33 +1,49 @@
-import React from "react";
-import { Fade } from "react-slideshow-image";
-import "./SlideShow.css";
+import React, { Component } from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 import slideShowImgOne from "../../images/slideShowImgOne.jpeg";
 import slideShowImgTwo from "../../images/slideShowImgTwo.jpeg";
+import "./SlideShow.css";
+import { Icon } from "semantic-ui-react";
 
-const properties = {
-  duration: 10000,
-  transitionDuration: 500,
-  infinite: true,
-  autoplay: true
-};
-
-const SlideShow = () => {
-  return (
-    <Fade {...properties}>
-      <div className="each-fade">
-        <div className="image-container">
-          <img src={slideShowImgOne} alt={"JOE AUTO"} />
+class SlideShow extends Component {
+  render() {
+    return (
+      <div className={"containerCarousel"}>
+        <div className={"textProcess"}>
+          <Icon
+            name={"photo"}
+            circular
+            inverted
+            size={"huge"}
+            color={"orange"}
+          />
+          <h1>Galerie</h1>
         </div>
+        <Carousel
+          showArrows={true}
+          infiniteLoop={true}
+          useKeyboardArrows={true}
+          showIndicators={false}
+          autoPlay={true}
+          transitionTime={700}
+        >
+          <div>
+            <img src={slideShowImgOne} />
+            <p className="legend">
+              Replace this text with a proper description of the process.
+            </p>
+          </div>
+          <div>
+            <img src={slideShowImgTwo} />
+            <p className="legend">
+              Replace this text with a proper description of the process.
+            </p>
+          </div>
+        </Carousel>
       </div>
-
-      <div className="each-fade">
-        <div className="image-container">
-          <img src={slideShowImgTwo} alt={"JOE AUTO"} />
-        </div>
-        <h2>HELLO</h2>
-      </div>
-    </Fade>
-  );
-};
+    );
+  }
+}
 
 export default SlideShow;

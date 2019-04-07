@@ -4,10 +4,11 @@ import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
 import Start from "./components/Start/Start";
 import "./App.css";
-import backgroundStartImg from "./images/backgroundStartImg.jpg";
 import Team from "./components/Team/Team";
 import MapContainer from "./components/Map/MapContainer";
 import Program from "./components/Program/Program";
+import SlideShow from "./components/SlideShow/SlideShow";
+import Services from "./components/Services/Services";
 
 class App extends Component {
   state = {
@@ -41,13 +42,16 @@ class App extends Component {
             <Start />
           </div>
           <div>
+            <Services />
+          </div>
+          <div>
             <Program />
           </div>
           <div>
             <Team />
           </div>
           <div>
-            <MapContainer />
+            <SlideShow />
           </div>
         </div>
       </div>

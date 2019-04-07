@@ -1,7 +1,35 @@
+.links {
+    color: rgba(0, 0, 0, 0.87);
+}
+
 .program {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.days {
+    padding-left: 35px;
+}
+
+.contactTextPhoneNumber {
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.contactTextFacebook {
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.contactTextAddress {
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.contactRows {
+    display: flex;
+    flex-direction: row;
 }
 
 .container {
@@ -28,6 +56,20 @@
     .container {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         background: gainsboro;
+    }
+
+    .container-contact {
+        padding-top: 30px;
+        padding-left: 10px;
+    }
+
+    .contactTextAddress {
+        font-size: medium;
+    }
+
+    .contactTextFacebook {
+        font-size: large;
     }
 }

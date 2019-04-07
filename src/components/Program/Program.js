@@ -22,17 +22,53 @@ const Program = () => (
       <h1 className={"contact-header"}>Contact</h1>
       <div className={"contact"}>
         <h2>
-          <Icon loading circular color={"orange"} size="large" name="phone" />{" "}
-          0743792091{" "}
+          <div className={"contactRows"}>
+            <Icon loading circular color={"orange"} size="large" name="phone" />{" "}
+            <div className={"contactTextPhoneNumber"}> 0743792091 </div>
+          </div>
         </h2>
         <h2>
-          <Icon
-            name={"map marker alternative"}
-            color={"orange"}
-            size={"large"}
-            circular
-          />
-          Șoseaua de centură, nr. 14, Alba Iulia
+          <a
+            className={"links"}
+            target="_blank"
+            rel="noopener noreferrer"
+            href={"https://www.facebook.com/alexandru.maierutiu"}
+          >
+            <div className={"contactRows"}>
+              <Icon
+                name={"facebook"}
+                color={"orange"}
+                size={"large"}
+                circular
+              />
+              <div className={"contactTextFacebook"}>
+                {" "}
+                Urmărește-ne pe Facebook!{" "}
+              </div>
+            </div>
+          </a>
+        </h2>
+        <h2>
+          <a
+            className={"links"}
+            target="_blank"
+            rel="noopener noreferrer"
+            href={
+              "https://www.google.com/maps/place/Strada+Orizontului,+Alba+Iulia/@46.0878555,23.5860208,18z/data=!4m5!3m4!1s0x474ea86a90306da3:0x5046312d71dc9464!8m2!3d46.0878406!4d23.5871902"
+            }
+          >
+            <div className={"contactRows"}>
+              <Icon
+                name={"map marker alternative"}
+                color={"orange"}
+                size={"large"}
+                circular
+              />
+              <div className={"contactTextAddress"}>
+                Șoseaua de centură, nr. 14, Alba Iulia{" "}
+              </div>
+            </div>
+          </a>
         </h2>
       </div>
     </div>
