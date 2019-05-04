@@ -9,6 +9,8 @@ import MapContainer from "./components/Map/MapContainer";
 import Program from "./components/Program/Program";
 import SlideShow from "./components/SlideShow/SlideShow";
 import Services from "./components/Services/Services";
+import Footer from "./components/Footer/Footer";
+import CallUs from "./components/CallUs/CallUs";
 
 class App extends Component {
   state = {
@@ -52,6 +54,15 @@ class App extends Component {
           </div>
           <div>
             <SlideShow />
+          </div>
+          <div>
+            <MapContainer />
+          </div>
+          <div>
+            <Footer />
+          </div>
+          <div>
+            <CallUs />
           </div>
         </div>
       </div>

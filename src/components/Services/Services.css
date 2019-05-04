@@ -1,12 +1,38 @@
-.containerServices {
+.containerServicesHeader {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    max-height: 300px;
+}
+
+.img {
+    padding-bottom: 10px;
+}
+
+.card {
+
+}
+
+.containerServices {
+    padding-bottom: 30px;
 }
 
 .textServices {
     padding-top: 15px;
 }
+
+.services {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.serviceItem {
+    padding-bottom: 20px;
+}
+

@@ -1,0 +1,21 @@
+.div-footer {
+    background: dimgray;
+    height: 125px;
+}
+
+.footer {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+
+.copy {
+    font-size: x-large;
+}
+
+
+
+

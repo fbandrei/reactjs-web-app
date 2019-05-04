@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import slideShowImgOne from "../../images/slideShowImgOne.jpeg";
-import slideShowImgTwo from "../../images/slideShowImgTwo.jpeg";
+import volvoBefore from "../../images/volvov60before.jpg";
+import volvoAfter from "../../images/volvov60after.jpg";
+import renaultBefore from "../../images/renaultbefore.jpg";
+import marius from "../../images/marius.jpg";
 import "./SlideShow.css";
 import { Icon } from "semantic-ui-react";
 
@@ -20,25 +22,25 @@ class SlideShow extends Component {
           />
           <h1>Galerie</h1>
         </div>
+
         <Carousel
+          className={"carousel"}
           showArrows={true}
           infiniteLoop={true}
           useKeyboardArrows={true}
           showIndicators={false}
-          autoPlay={true}
-          transitionTime={700}
+          transitionTime={1000}
         >
           <div>
-            <img src={slideShowImgOne} />
-            <p className="legend">
-              Replace this text with a proper description of the process.
-            </p>
+            <img src={volvoBefore} />
           </div>
           <div>
-            <img src={slideShowImgTwo} />
-            <p className="legend">
-              Replace this text with a proper description of the process.
-            </p>
+            <img src={volvoAfter} />
+            <p className="legend">Volvo V60 înainte de reparație.</p>
+          </div>
+          <div>
+            <img src={renaultBefore} />
+            <p className="legend">Volvo V60 înainte de reparație.</p>
           </div>
         </Carousel>
       </div>
