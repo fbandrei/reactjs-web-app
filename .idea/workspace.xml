@@ -1,26 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9347075-83dd-40c6-8861-c97844044eed" name="Default" comment="1. added gallery slide show&#10;2. added facebook link&#10;3. added new icons&#10;and other styling improvements">
+    <list default="true" id="d9347075-83dd-40c6-8861-c97844044eed" name="Default" comment="1. added google maps&#10;2. added footer&#10;3. improved the start background &#10;4. improved the overall styling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Map/MapContainer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Map/MapContainer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Map/MapContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Map/MapContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Services.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Services.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Services.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Services.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SlideShow/SlideShow.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SlideShow/SlideShow.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SlideShow/SlideShow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SlideShow/SlideShow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Start/Start.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Start/Start.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Start/Start.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Start/Start.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Team/Team.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Team/Team.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Toolbar/Toolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Toolbar/Toolbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Toolbar/Toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Toolbar/Toolbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/slideShowImgOne.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/slideShowImgTwo.jpeg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -164,6 +146,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -231,7 +214,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -247,7 +229,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Bogdan\WebstormProjects\joeauto\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="application.passwordSafe" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -313,6 +295,7 @@
       <workItem from="1556545196286" duration="8752000" />
       <workItem from="1556706546367" duration="4103000" />
       <workItem from="1556824080556" duration="628000" />
+      <workItem from="1556958743117" duration="1678000" />
     </task>
     <task id="LOCAL-00001" summary="Responsive web page with css grid, flexbox and React.">
       <created>1554441375199</created>
@@ -328,11 +311,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554657795489</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1. added google maps&#10;2. added footer&#10;3. improved the start background &#10;4. improved the overall styling">
+      <created>1556958989808</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1556958989808</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201128000" />
+    <option name="totallyTimeSpent" value="202806000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -358,9 +348,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3291815" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4973822" visible="true" weight="0.2580071" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5026178" side_tool="true" weight="0.21070811" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49663424" weight="0.2580071" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.50037396" side_tool="true" visible="true" weight="0.3291815" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49962604" visible="true" weight="0.3291815" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -389,10 +379,21 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Responsive web page with css grid, flexbox and React." />
     <MESSAGE value="1. added gallery slide show&#10;2. added facebook link&#10;3. added new icons&#10;and other styling improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. added gallery slide show&#10;2. added facebook link&#10;3. added new icons&#10;and other styling improvements" />
+    <MESSAGE value="1. added google maps&#10;2. added footer&#10;3. improved the start background &#10;4. improved the overall styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. added google maps&#10;2. added footer&#10;3. improved the start background &#10;4. improved the overall styling" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.js">
