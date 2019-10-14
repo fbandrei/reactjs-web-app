@@ -11,6 +11,7 @@ import SlideShow from "./components/SlideShow/SlideShow";
 import Services from "./components/Services/Services";
 import Footer from "./components/Footer/Footer";
 import CallUs from "./components/CallUs/CallUs";
+import ScrollableAnchor from "react-scrollable-anchor";
 
 class App extends Component {
   state = {
@@ -40,30 +41,46 @@ class App extends Component {
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
         <div className={"wrapper"}>
-          <div>
-            <Start />
-          </div>
-          <div>
-            <Services />
-          </div>
-          <div>
-            <Program />
-          </div>
-          <div>
-            <Team />
-          </div>
-          <div>
-            <SlideShow />
-          </div>
-          <div>
-            <MapContainer />
-          </div>
-          <div>
-            <Footer />
-          </div>
-          <div>
-            <CallUs />
-          </div>
+          <ScrollableAnchor id={"start"}>
+            <div>
+              <Start />
+            </div>
+          </ScrollableAnchor>
+          <ScrollableAnchor id={"services"}>
+            <div>
+              <Services />
+            </div>
+          </ScrollableAnchor>
+          <ScrollableAnchor id={"program"}>
+            <div>
+              <Program />
+            </div>
+          </ScrollableAnchor>
+          <ScrollableAnchor id={"team"}>
+            <div>
+              <Team />
+            </div>
+          </ScrollableAnchor>
+          <ScrollableAnchor id={"slideshow"}>
+            <div>
+              <SlideShow />
+            </div>
+          </ScrollableAnchor>
+          <ScrollableAnchor id={"map"}>
+            <div>
+              <MapContainer />
+            </div>
+          </ScrollableAnchor>
+          <ScrollableAnchor id={"footer"}>
+            <div>
+              <Footer />
+            </div>
+          </ScrollableAnchor>
+          <ScrollableAnchor id={"callus"}>
+            <div>
+              <CallUs />
+            </div>
+          </ScrollableAnchor>
         </div>
       </div>
     );

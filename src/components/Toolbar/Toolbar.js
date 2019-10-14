@@ -15,19 +15,19 @@ const Toolbar = props => (
       <div className={"toolbar_navigation-items"}>
         <ul>
           <li>
-            <a href="/">Servicii</a>
+            <a href="#services">Servicii</a>
           </li>
           <li>
-            <a href="/">Program & Contact</a>
+            <a href="#program">Program & Contact</a>
           </li>
           <li>
-            <a href="/">NOI</a>
+            <a href="#team">NOI</a>
           </li>
           <li>
-            <a href="/">Galerie</a>
+            <a href="#slideshow">Galerie</a>
           </li>
           <li>
-            <a href="/">Locatie</a>
+            <a href="#map">Locatie</a>
           </li>
         </ul>
       </div>
