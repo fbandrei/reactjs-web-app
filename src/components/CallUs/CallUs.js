@@ -5,7 +5,7 @@ import { Icon } from "semantic-ui-react";
 const CallUs = () => {
   return (
     <div className={"wrapper"}>
-      <a id={"button"} href={"tel:+40743792091"}>
+      <a id={"button"} href={"tel:+40745254700"}>
         <Icon name={"phone"} size={"big"} className={"phoneIcon"} />
       </a>
     </div>

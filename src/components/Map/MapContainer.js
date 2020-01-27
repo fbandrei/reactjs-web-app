@@ -1,5 +1,5 @@
 import React from "react";
-import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
+import { Map, GoogleApiWrapper, Marker, InfoWindow } from "google-maps-react";
 import "./MapContainer.css";
 import { Icon } from "semantic-ui-react";
 
@@ -13,7 +13,7 @@ export class MapContainer extends React.Component {
       <div className={"mapContainer"}>
         <div className={"divIconHeader"}>
           <Icon name={"map marker"} circular size={"huge"} inverted />
-          <h1>Locația noastră pe hartă</h1>
+          <h1>Ne găsești aici</h1>
         </div>
         <div>
           <Map
@@ -22,11 +22,19 @@ export class MapContainer extends React.Component {
             zoom={13}
             style={mapStyles}
             initialCenter={{
-              lat: 46.060911,
-              lng: 23.624067
+              lat: 46.090972,
+              lng: 23.600111
             }}
           >
-            <Marker />
+            <Marker name={'Str.Călugăreni, nr 8, Alba Iulia'}/>
+            <InfoWindow
+              position={{
+                lat: 46.090972,
+                lng: 23.600111
+              }}
+               visible={true}>
+                 <h2>Str.Călugăreni, nr 8, Alba Iulia</h2>
+            </InfoWindow>
           </Map>
         </div>
       </div>

@@ -5,6 +5,7 @@
     width: 100%;
     z-index: 250;
     opacity: 0.92;
+    height: 70px;
 }
 
 .toolbar_logo a {
@@ -47,14 +48,38 @@
     flex: 1;
 }
 
-@media (max-width: 768px) {
+.toolbar_logo_mobile a {
+    display: none;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: darkorange;
+    margin-left: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 1000px) {
+    .toolbar_logo_mobile a {
+        display: block;
+        flex-grow: 4;
+    }
     .toolbar_navigation-items {
         display: none;
     }
+    .toolbar_logo {
+        display: none;
+    }
+
+    .phoneNumberMobile {
+        margin-top: 5px;
+        padding-left: 20%;
+    }
+
+    .toolbar-toggle-button {
+        flex-grow: 1;
+    }
 }
 
-
-@media (min-width: 769px) {
+@media (min-width: 1001px) {
     .toolbar-toggle-button {
         display: none;
     }

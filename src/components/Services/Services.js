@@ -43,16 +43,7 @@ class ServiceCard extends React.Component {
               <br />
               <Card.Header textAlign={"center"}>{this.props.name}</Card.Header>
               <Card.Description>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
+                {this.props.description}
               </Card.Description>
             </Card.Content>
           </Card>
@@ -83,19 +74,35 @@ const Services = () => {
         <div className={"serviceItem"}>
           <ServiceCard
             name={"Tinichigerie"}
-            description={"Test"}
+            description={`
+            Prestam operatii specifice de tinichigerie auto precum: antifonare, schimbari de aripi, usi si alte elemente de caroserie,
+             aplicarea de ornamente, schimbari de parbrize/lunete,geamuri laterale, etc.
+            Indiferent de gradul de avarie a caroseriei din impact sau starea avansata de rugina o putem aduce la starea initiala chiar 
+            si cu elemente de caroserie recuperabile fara a mai fi nevoie sa cumparati alte piese, avand consultanta necesara pentru a duce 
+            la final lucrarea masinii dumneavoastra cu un pret accesibil.`}
             img={tinichigerie}
           />
         </div>
         <div className={"serviceItem"}>
           <ServiceCard
             name={"Vopsitorie"}
-            description={"Test"}
+            description={`Servicii de vopsitorie complete avand dotarile necesare cu vopsitori specializati, 
+            fiind dotata cu laborator propriu de indentificare a nuantei si prepararea vopselei, fiind aplicata 
+            intr-o cabina moderna ce asigura o uscare uniformizata perfect si rezistenta in timp.
+            Vopselele auto folosite sunt de calitate superioara iar formulele de culoare fiind obtinute computerizat.
+            Procesul de vopsire se desfasoara in cabina profesionala ce asigura un rezultat final de exceptie si o uscare rapida.
+             Aerul folosit pentru ventilare si aerul cald folosit pentru uscare este filtrat pentru a evita depunerile de impuritati sau de particule de apa.`
+            }
             img={vopsitorie}
           />
         </div>
         <div className={"serviceItem"}>
-          <ServiceCard name={"Poliș"} description={"Test"} img={polish} />
+          <ServiceCard name={"Poliș"} description={`
+          Polisharea este o actiune in urma careia se lustruieste suprafata vopselei de pe caroserie. Aceasta procedura poate fi simpla, 
+          necesitand un singur pas, 
+          sau un proces de durata care implica folosirea diferitelor paste si procedee de lustruire.
+          Polishul profesional este un serviciu complex ce necesita o anumita pregatire in domeniu si nu de putine ori, am vazut autoturisme 
+          polishate prea abraziv iar lacul de pe caroserie a fost compromis, desi ca rezultat optic masina poate arata bine.`} img={polish} />
         </div>
       </div>
     </div>

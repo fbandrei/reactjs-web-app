@@ -2,9 +2,10 @@ import React from "react";
 import "./Team.css";
 import Member from "./Member/Member";
 import gigiAvatar from "../../images/gigi.jpg";
-import gigelAvatar from "../../images/gigel.jpg";
-import alecsAvatar from "../../images/alecs.jpg";
-import mariusAvatar from "../../images/marius.jpg";
+import silviuAvatar from "../../images/Silviu.jpeg";
+import mihaiAvatar from "../../images/Mihai.jpeg";
+import razvanAvatar from "../../images/Razvan.jpeg";
+import mariusAvatar from "../../images/Marius.jpeg";
 import { Icon } from "semantic-ui-react";
 
 class Team extends React.Component {
@@ -16,38 +17,51 @@ class Team extends React.Component {
           <h1>Echipa noastră</h1>
         </div>
         <ul className={"team"}>
+        <li className={"team-member"}>
+            <Member
+              img={silviuAvatar}
+              name={"Silviu"}
+              position={"Director"}
+              description={
+                ""
+              }
+            />
+          </li>
           <li className={"team-member"}>
             <Member
               img={gigiAvatar}
               name={"GIGI"}
-              position={"Tinichigiu senior"}
-              description={"Gigi face artă din această meserie."}
+              position={"Tinichigiu vopsitor"}
             />
           </li>
           <li className={"team-member"}>
             <Member
               img={mariusAvatar}
               name={"Marius"}
-              position={"Tinichigiu"}
+              position={"Ajutor de tinichigiu"}
               description={
-                "Experiență dobândită în Spania, Italia, Germania ..."
+                ""
               }
             />
           </li>
           <li className={"team-member"}>
             <Member
-              img={alecsAvatar}
-              name={"Alexuțu"}
-              position={"Preparator de cafea."}
-              description={"Alex este pasionat de mașinuțe."}
+              img={razvanAvatar}
+              name={"Razvan"}
+              position={"Ajutor de tinichigiu"}
+              description={
+                ""
+              }
             />
           </li>
           <li className={"team-member"}>
             <Member
-              img={gigelAvatar}
-              name={"Gigel"}
-              position={"Gigel"}
-              description={"Face de toate."}
+              img={mihaiAvatar}
+              name={"Mihai"}
+              position={"Ajutor de tinichigiu"}
+              description={
+                ""
+              }
             />
           </li>
         </ul>

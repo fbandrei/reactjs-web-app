@@ -3,13 +3,9 @@
     width: 100%;
 }
 
-.icons-desktop {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
 .background-text {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -21,12 +17,8 @@
 }
 
 .p {
-    background-color: rgba(255, 140, 0, 0.5);
-}
-
-.noi {
-    font-size: 65px;
-    font-family: sans-serif;
+    /* background-color: rgba(255, 140, 0, 0.5); */
+    background-color: #100e17;
 }
 
 .mobile-background-text {
@@ -34,31 +26,30 @@
 }
 
 .desktop-background-text {
-    font-size: 4.5vw;
+    font-size: 4.0vw;
     font-family: Serif;
 }
 
-.icons-mobile {
-    display: none;
+.icons {
+    padding-bottom: 50px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 1000px) {
     .desktop-background-text {
         display: none;
     }
     .mobile-background-text {
-        display: inline-block;
+        display: block;
         font-size: 7vw;
         font-family: Serif;
-        padding-bottom: 200px;
     }
-
-    .icons-desktop {
-        display: none;
+    .icons {
+        padding-bottom: 20px;
     }
+}
 
-    .icons-mobile {
-        display: block;
-        padding-bottom: 50px;
+@media (max-height: 450px) {
+    .mobile-background-text {
+        font-size: 7vh;
     }
 }

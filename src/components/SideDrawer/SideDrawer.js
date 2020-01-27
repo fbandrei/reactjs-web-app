@@ -12,13 +12,13 @@ const SideDrawer = props => {
     <nav className={drawerClasses}>
       <ul>
         <li>
-          <a href="#services">Servicii</a>
+          <a href="#services" onClick="">Servicii</a>
         </li>
         <li>
           <a href="#program">Program & Contact</a>
         </li>
         <li>
-          <a href="#team">NOI</a>
+          <a href="#team">Echipa</a>
         </li>
         <li>
           <a href="#slideshow">Galerie</a>
@@ -29,6 +29,7 @@ const SideDrawer = props => {
       </ul>
     </nav>
   );
+
 };
 
 export default SideDrawer;

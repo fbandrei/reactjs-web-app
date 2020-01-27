@@ -9,7 +9,11 @@ const Toolbar = props => (
         <DrawerToggleButton click={props.drawerClickHandler} />
       </div>
       <div className={"toolbar_logo"}>
-        <a href="/">GIGI AUTO - 0743792091</a>
+        <a href="/">TINICHIGERIE - VOPSITORIE AUTO ALBA IULIA - 0745254700</a>
+      </div>
+      <div className={"toolbar_logo_mobile"}>
+        <a href="/">Tinichigerie - Vopsitorie Auto</a>
+        <a className={"phoneNumberMobile"} href={"tel:+40745254700"}>0745254700</a>
       </div>
       <div className={"spacer"} />
       <div className={"toolbar_navigation-items"}>
@@ -21,7 +25,7 @@ const Toolbar = props => (
             <a href="#program">Program & Contact</a>
           </li>
           <li>
-            <a href="#team">NOI</a>
+            <a href="#team">Echipa</a>
           </li>
           <li>
             <a href="#slideshow">Galerie</a>
