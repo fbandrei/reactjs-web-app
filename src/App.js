@@ -12,6 +12,7 @@ import Services from "./components/Services/Services";
 import Footer from "./components/Footer/Footer";
 import CallUs from "./components/CallUs/CallUs";
 import ScrollableAnchor from "react-scrollable-anchor";
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 class App extends Component {
   state = {
@@ -79,6 +80,14 @@ class App extends Component {
           <ScrollableAnchor id={"callus"}>
             <div>
               <CallUs />
+            </div>
+          </ScrollableAnchor>
+          <ScrollableAnchor id={"chat"}>
+            <div>
+            <MessengerCustomerChat
+                pageId="105086961088554"
+                appId="1129699377377830" 
+                loggedInGreeting = "Bună, cu ce vă putem ajuta?"/>
             </div>
           </ScrollableAnchor>
         </div>

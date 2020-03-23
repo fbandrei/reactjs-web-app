@@ -1,23 +1,19 @@
 import React from "react";
 import "./Start.css";
 import bmw from "../../images/bmw.jpg";
+import bmwmobile from "../../images/bmw-mobile.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCar,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  BrowserView,
+  MobileView,
+} from "react-device-detect"; 
 
 const Start = () => (
   <div>
     <div className={"background-text"}>
-      {/* <div className={"icons-desktop"}>
-        <FontAwesomeIcon icon={faCarCrash} size="6x" />
-        <FontAwesomeIcon icon={faPlus} size="6x" />
-        <p className={"noi"}>
-          <b>NOI</b>
-        </p>
-        <FontAwesomeIcon icon={faEquals} size="6x" />
-        <FontAwesomeIcon icon={faCar} size="6x" color={"darkorange"} />
-      </div> */}
       <div className={"icons"} >
         <FontAwesomeIcon icon={faCar} size="10x" />
       </div>
@@ -31,7 +27,12 @@ const Start = () => (
         <p className={"p"}>Haide la VALI & CARMEN SPEDITION</p>
       </div>
     </div>
-    <img src={bmw} alt="JOE AUTO" id="backgroundImg" />
+    <BrowserView>
+      <img src={bmw} alt="JOE AUTO" id="backgroundImg" />
+    </BrowserView>
+    <MobileView>
+      <img src={bmwmobile} alt="JOE AUTO" id="backgroundImg" />
+    </MobileView>
   </div>
 );
 

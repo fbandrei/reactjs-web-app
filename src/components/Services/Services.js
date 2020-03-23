@@ -1,7 +1,6 @@
 import React from "react";
 import "./Services.css";
-import { Button, Card, Icon, Image, Transition } from "semantic-ui-react";
-import { LoremIpsum } from "lorem-ipsum";
+import { Card, Icon, Image, Transition, Item} from "semantic-ui-react";
 import tinichigerie from "../../images/tinichigerie.jpg";
 import polish from "../../images/polish.jpg";
 import vopsitorie from "../../images/vopsitorie.jpg";

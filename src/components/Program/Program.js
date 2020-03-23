@@ -32,7 +32,7 @@ const Program = () => (
             className={"links"}
             target="_blank"
             rel="noopener noreferrer"
-            href={"https://www.facebook.com/alexandru.maierutiu"}
+            href={"https://www.facebook.com/Tinichigerie-Vopsitorie-Alba-Iulia-Vali-Carmen-Spedition-105086961088554/"}
           >
             <div className={"contactRows"}>
               <Icon
